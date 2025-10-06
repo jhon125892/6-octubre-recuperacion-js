@@ -1,3 +1,159 @@
+:root{
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --primary: #00a651; /* SENA green */
+  --accent: #1976d2;
+  --border: #d1d5db;
+}
+
+/* Page layout */
+html, body{
+  height: 100%;
+}
+body{
+  margin: 0;
+  font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: #111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding: 24px 12px;
+}
+
+.main-1, .main-2, .main-3, .main-4{
+  max-width: 1100px;
+  margin: 0 auto 12px auto;
+  box-sizing: border-box;
+}
+
+.main-1{
+  display:flex;
+  justify-content:center; /* logo centered */
+  align-items:center;
+  padding: 8px 0 6px 0;
+  position: relative;
+}
+
+.sena-logo{
+  display:flex;
+  max-width: 140px;
+  height: auto;
+  
+}
+
+.main-2{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap: 16px;
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  z-index: 10;
+}
+
+.btn-salir{
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.btn-salir:hover{
+  background: rgba(0,166,81,0.08);
+}
+
+.user-info{
+  font-weight:600;
+  color:var(--muted);
+}
+
+.main-3{
+  display:flex;
+  gap: 12px;
+  align-items:center;
+  padding: 8px 6px;
+}
+
+select{
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #fff;
+  min-width: 220px;
+}
+
+.main-4{
+  background: var(--card);
+  padding: 18px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+}
+
+.main-4 p{
+  margin: 6px 0;
+  color: #111827;
+}
+
+.main-4 p span{
+  font-weight:700;
+  margin-left:6px;
+  color: #0f172a;
+}
+
+/* Table styles similar to the image */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background: white;
+}
+
+th, td{
+  padding: 10px 8px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+th{
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight:700;
+}
+
+tr:nth-child(even) td{
+  background: #fbfdff;
+}
+
+.table-small td{
+  padding: 6px 6px;
+  font-size: 0.9rem;
+}
+
+/* Footer / author note centered like the image */
+.page-footer{
+  max-width: 1100px;
+  margin: 22px auto 0 auto;
+  text-align:center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 760px){
+  .main-3{ flex-direction:column; align-items:stretch }
+  select{ width:100% }
+  /* revert .main-2 positioning on small screens */
+  .main-2{ position: static; flex-direction:column; gap:8px; align-items:flex-end }
+  .sena-logo{ max-width:100px }
+}
 body {
     margin: 0;
     background-color: rgb(230, 230, 230);

@@ -78,7 +78,7 @@ function mostrarDatosAprendiz(documento) {
             row.innerHTML = `
                 <td>${juicio["Resultado de Aprendizaje"] || ''}</td>
                 <td>${juicio["Juicio de Evaluación"] || ''}</td>
-                <td>${juicio["Fecha y Hora"] || ''}</td>
+                <td>${juicio["Fecha y Hora del Juicio Evaluativo"] || ''}</td>
                 <td>${juicio["Funcionario que registro el juicio evaluativo"] || ''}</td>
             `;
             resultadosAprendiz.appendChild(row);

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+    font-family: "Roboto", sans-serif;
+}
+
+.main-1 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.main-2 {
+    display: flex;
+    margin: 10px;
+}
+
+#user-info {
+    justify-content: right;
+}
